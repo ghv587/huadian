@@ -1,0 +1,28 @@
+
+基本环境
+    python环境:python2.7.6
+    操作系统:   ubuntu
+    数据库:     mysql 5.5.52-0
+    开发工具:   pyCharm
+
+依赖包
+[
+    MySQL-python==1.2.5
+    crypto==1.4.1
+    paramiko==2.0.2
+    tornado==4.4.1
+    torndb==0.3
+]
+
+安装提示：
+    需先安装数据库，建议开发平台linux
+
+
+文件结构说明：
+├──Readme
+├──app
+│  
+├──bin
+├──logfile
+│
+│

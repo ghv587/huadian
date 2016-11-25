@@ -1,0 +1,28 @@
+{% block mid-one %}
+<h1 class="page-header">Dashboard</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="系统时间">
+              <h4>time</h4>
+              <span class="text-muted">{{time}}</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="内存使用">
+              <h4>meminfo</h4>
+              <span class="text-muted">{{meminfo}}</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="硬盘使用">
+              <h4>disk</h4>
+              <span class="text-muted">{{disk}}</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="CPU使用">
+              <h4>cpuinfo</h4>
+              <span class="text-muted">{{cpuinfo}}</span>
+            </div>
+
+          </div>
+
+{% end %}

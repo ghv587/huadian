@@ -1,0 +1,80 @@
+
+{% extends "base.html" %}
+{% include "bar.html" %}
+{% include "left.html" %}
+{% block mid-one %}
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+<!--下拉菜单表单-->
+   <div class="dropdown">
+
+       <!--<form action="#" method="get"  >-->
+      <input name="create1" type="button"  onclick="location.href='addhost'" class="btn btn-primary btn-sm" value="添加主机" >
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input name="create" type="submit" class="btn btn-warning btn-sm" value="连接主机" >
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+       <!--</form>-->
+    </div>
+
+    <br>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>选择</th>
+                  <th>主机名</th>
+                  <th>IP地址</th>
+                  <th>操作系统</th>
+                  <th>CPU型号</th>
+                  <th>内存大小</th>
+                  <th>描述信息</th>
+                  <th>设备状态</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>北京-zabbix监控</td>
+                  <td>192.168.0.1,172.16.0.1</td>
+                  <th>Centos6.5</th>
+                  <td>E5300</td>
+                  <td>32G</td>
+                  <td>用来监控所有北京机房的服务器</td>
+                  <td>禁用</td>
+                  <td><input name="create" type="button" class="btn btn-success  btn-sm" value="更新主机" ></td>
+                  <td><input name="create" type="button" class="btn btn-danger btn-sm" value="删除主机" ></td>
+                 </tr>
+                  <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>北京-系统监控</td>
+                  <td>192.168.0.2,172.16.0.2</td>
+                  <th>Windows 2008 Server R2</th>
+                  <td>E5300</td>
+                  <td>32G</td>
+                  <td>window机器</td>
+                  <td>正常</td>
+                  <td><input name="create" type="button" class="btn btn-success  btn-sm" value="更新主机" ></td>
+                  <td><input name="create" type="button" class="btn btn-danger btn-sm" value="删除主机" ></td>
+              </tr>
+                <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>{{host.desc}}</td>
+                  <td>{{host.ip}}</td>
+                  <th>{{host.ostype}}</th>
+                  <td>E5300</td>
+                  <td>8G</td>
+                  <td>linux</td>
+                  <td>正常</td>
+                  <td><input name="create" type="button" class="btn btn-success  btn-sm" value="更新主机" ></td>
+                  <td><input name="create" type="button" class="btn btn-danger btn-sm" value="删除主机" ></td>
+              </tr>
+              </tbody>
+            </table>
+
+
+{% end %}
+
+
+
+

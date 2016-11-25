@@ -1,0 +1,1 @@
+tree -I *.pyc huadian
